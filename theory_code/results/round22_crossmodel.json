@@ -1,0 +1,2440 @@
+{
+  "meta": {
+    "lambdas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "units": [
+      [
+        "noisy20",
+        "homo"
+      ],
+      [
+        "dead0.20",
+        "homo"
+      ],
+      [
+        "noisy20",
+        "hetero_strong"
+      ]
+    ],
+    "seed": 123,
+    "methods": [
+      "Exact-FCLS",
+      "SUnSAL",
+      "SUnSAL-TV",
+      "GLS",
+      "Huber",
+      "SCW-DC",
+      "S2-E",
+      "Baseline"
+    ],
+    "nu": [
+      0.0,
+      0.02,
+      0.05
+    ]
+  },
+  "arm_a": {
+    "Urban|noisy20|homo|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.24128545605384763,
+            "SUnSAL": 0.23714922526595145,
+            "SUnSAL-TV": 0.278958295891251,
+            "GLS": 0.22631455119759863,
+            "Huber": 0.24192127063005428,
+            "SCW-DC": 0.043190753366875216,
+            "S2-E": 0.043691355563106306,
+            "Baseline": 0.06583099596708629
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "GLS",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.1811305716398682,
+            "SUnSAL": 0.177048777415776,
+            "SUnSAL-TV": 0.25607964176023806,
+            "GLS": 0.17312124792209435,
+            "Huber": 0.18196799503107336,
+            "SCW-DC": 0.06962653679437854,
+            "S2-E": 0.06976016161557855,
+            "Baseline": 0.07891814734899431
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "GLS",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.12109725272616462,
+            "SUnSAL": 0.11712997944156213,
+            "SUnSAL-TV": 0.24617571552569906,
+            "GLS": 0.12645277722340115,
+            "Huber": 0.12233335278679577,
+            "SCW-DC": 0.12286950857603257,
+            "S2-E": 0.12284410367773553,
+            "Baseline": 0.12405271455270774
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "S2-E",
+            "SCW-DC",
+            "Baseline",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.06154228885436193,
+            "SUnSAL": 0.05795897383417442,
+            "SUnSAL-TV": 0.25078841873080565,
+            "GLS": 0.09631350537328066,
+            "Huber": 0.06391553220351455,
+            "SCW-DC": 0.180589661148756,
+            "S2-E": 0.18050350559618172,
+            "Baseline": 0.17837243637727093
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "S2-E",
+            "SCW-DC",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.013304513563639321,
+            "SUnSAL": 0.016300345885883777,
+            "SUnSAL-TV": 0.26917248523353055,
+            "GLS": 0.09914093918553639,
+            "Huber": 0.021716108609938077,
+            "SCW-DC": 0.2395725008078273,
+            "S2-E": 0.2394556433033569,
+            "Baseline": 0.23560777571328545
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "S2-E",
+            "SCW-DC",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.20799669017274686,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.20768957922775608,
+          "dist_to_fx": 0.009392487525708586
+        },
+        "SUnSAL-TV": {
+          "tv": 0.027923103382384254,
+          "dist_to_fx": 0.269241266583769
+        },
+        "GLS": {
+          "tv": 0.2105489724320389,
+          "dist_to_fx": 0.09830070796167009
+        },
+        "Huber": {
+          "tv": 0.20783720928478183,
+          "dist_to_fx": 0.01720061589339852
+        },
+        "SCW-DC": {
+          "tv": 0.19229149369013987,
+          "dist_to_fx": 0.23920309440610743
+        },
+        "S2-E": {
+          "tv": 0.19222173276489932,
+          "dist_to_fx": 0.239085783780299
+        },
+        "Baseline": {
+          "tv": 0.1888602389994945,
+          "dist_to_fx": 0.2352198557570487
+        }
+      },
+      "ref_gap": 0.2411082423962363,
+      "clean_resid": 0.08130971715271242,
+      "reversals": 19,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/GLS",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/GLS",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "GLS/Huber",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline",
+        "SCW-DC/S2-E",
+        "SCW-DC/Baseline",
+        "S2-E/Baseline"
+      ]
+    },
+    "Urban|dead0.20|homo|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.23858819079260424,
+            "SUnSAL": 0.23523711093706437,
+            "SUnSAL-TV": 0.2849282917391262,
+            "GLS": 0.22587952005664358,
+            "Huber": 0.23915365545234166,
+            "SCW-DC": 0.10480743147470407,
+            "S2-E": 0.10508324129153515,
+            "Baseline": 0.11443067378522803
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "GLS",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.18893687419842553,
+            "SUnSAL": 0.18580584976567013,
+            "SUnSAL-TV": 0.26801652291595,
+            "GLS": 0.18359051351996714,
+            "Huber": 0.18965345705760703,
+            "SCW-DC": 0.11290257592600747,
+            "S2-E": 0.11310485782444055,
+            "Baseline": 0.11795166113069813
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "GLS",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.14743340203944494,
+            "SUnSAL": 0.1448370712698102,
+            "SUnSAL-TV": 0.2640989011530462,
+            "GLS": 0.15380521354795004,
+            "Huber": 0.14835445591792407,
+            "SCW-DC": 0.147567047995435,
+            "S2-E": 0.1476806628217909,
+            "Baseline": 0.14831539928170948
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "Huber",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.12264877376617964,
+            "SUnSAL": 0.12123691139772311,
+            "SUnSAL-TV": 0.27373390489471144,
+            "GLS": 0.14447580710591576,
+            "Huber": 0.12375905410059879,
+            "SCW-DC": 0.19511976763469177,
+            "S2-E": 0.19517452585788458,
+            "Baseline": 0.19325881358702574
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.12496192774204071,
+            "SUnSAL": 0.1252423577140726,
+            "SUnSAL-TV": 0.29559925504020607,
+            "GLS": 0.15923919731781297,
+            "Huber": 0.12605637771147185,
+            "SCW-DC": 0.2482620825431266,
+            "S2-E": 0.24828060889826553,
+            "Baseline": 0.24488186586221902
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.20892995360131164,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.2083989827029054,
+          "dist_to_fx": 0.008409024369386493
+        },
+        "SUnSAL-TV": {
+          "tv": 0.08147449645799537,
+          "dist_to_fx": 0.2679632526320125
+        },
+        "GLS": {
+          "tv": 0.21122135520374496,
+          "dist_to_fx": 0.09873089028334339
+        },
+        "Huber": {
+          "tv": 0.20889714505172943,
+          "dist_to_fx": 0.016585667012598698
+        },
+        "SCW-DC": {
+          "tv": 0.18098555471365754,
+          "dist_to_fx": 0.21451911519339123
+        },
+        "S2-E": {
+          "tv": 0.18102898624007777,
+          "dist_to_fx": 0.21454046702001248
+        },
+        "Baseline": {
+          "tv": 0.17925508609508065,
+          "dist_to_fx": 0.21059481620721932
+        }
+      },
+      "ref_gap": 0.2411082423962363,
+      "clean_resid": 0.08130971715271242,
+      "reversals": 18,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/GLS",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/GLS",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "GLS/Huber",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline",
+        "SCW-DC/Baseline",
+        "S2-E/Baseline"
+      ]
+    },
+    "Urban|noisy20|hetero_strong|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.24126554767067457,
+            "SUnSAL": 0.23713988187383553,
+            "SUnSAL-TV": 0.2789295157845384,
+            "GLS": 0.22172973006018898,
+            "Huber": 0.2419313859158941,
+            "SCW-DC": 0.03949722912061644,
+            "S2-E": 0.04010260884469763,
+            "Baseline": 0.06413839079748751
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "GLS",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.18108101145144279,
+            "SUnSAL": 0.1770085128020596,
+            "SUnSAL-TV": 0.2560474572500963,
+            "GLS": 0.1704571393854338,
+            "Huber": 0.18194944154173862,
+            "SCW-DC": 0.06763799109930341,
+            "S2-E": 0.06780743226883848,
+            "Baseline": 0.07762320089572974
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "GLS",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.1209886311992088,
+            "SUnSAL": 0.1170271404119903,
+            "SUnSAL-TV": 0.24614136967545827,
+            "GLS": 0.12733360724342396,
+            "Huber": 0.12225813273336213,
+            "SCW-DC": 0.1218868845870971,
+            "S2-E": 0.12187749820289276,
+            "Baseline": 0.12330303125540328
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "S2-E",
+            "SCW-DC",
+            "Huber",
+            "Baseline",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.06126020825143149,
+            "SUnSAL": 0.05766574066105858,
+            "SUnSAL-TV": 0.2507538542705801,
+            "GLS": 0.10314410678342156,
+            "Huber": 0.06368006615822727,
+            "SCW-DC": 0.1800127092544223,
+            "S2-E": 0.1799362368448032,
+            "Baseline": 0.17790042658918237
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "S2-E",
+            "SCW-DC",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.011576934600149292,
+            "SUnSAL": 0.014898716830734567,
+            "SUnSAL-TV": 0.2691394894470272,
+            "GLS": 0.1110414969479185,
+            "Huber": 0.020733998551157703,
+            "SCW-DC": 0.2392057403278104,
+            "S2-E": 0.2390954243502412,
+            "Baseline": 0.23528734324496653
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "S2-E",
+            "SCW-DC",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.20792364269092886,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.20762088234698398,
+          "dist_to_fx": 0.009375718540062602
+        },
+        "SUnSAL-TV": {
+          "tv": 0.027931609091217537,
+          "dist_to_fx": 0.26919897388638364
+        },
+        "GLS": {
+          "tv": 0.2097613636290889,
+          "dist_to_fx": 0.1106655779288326
+        },
+        "Huber": {
+          "tv": 0.20776699638047533,
+          "dist_to_fx": 0.017195500365366528
+        },
+        "SCW-DC": {
+          "tv": 0.19158007691413143,
+          "dist_to_fx": 0.23902372401820624
+        },
+        "S2-E": {
+          "tv": 0.1915216461104042,
+          "dist_to_fx": 0.23891140395600569
+        },
+        "Baseline": {
+          "tv": 0.18843889751477544,
+          "dist_to_fx": 0.23503489185032753
+        }
+      },
+      "ref_gap": 0.2411082423962363,
+      "clean_resid": 0.08130971715271242,
+      "reversals": 19,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/GLS",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/GLS",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "GLS/Huber",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline",
+        "SCW-DC/S2-E",
+        "SCW-DC/Baseline",
+        "S2-E/Baseline"
+      ]
+    },
+    "Samson|noisy20|homo|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.21111358304126526,
+            "SUnSAL": 0.20512442185169538,
+            "SUnSAL-TV": 0.2083142477989284,
+            "GLS": 0.3608487578721867,
+            "Huber": 0.21232292764070493,
+            "SCW-DC": 0.05878532080435078,
+            "S2-E": 0.05940290861646126,
+            "Baseline": 0.13999872019161372
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "SUnSAL-TV",
+            "Exact-FCLS",
+            "Huber",
+            "GLS"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.15853673218964962,
+            "SUnSAL": 0.15265632515298502,
+            "SUnSAL-TV": 0.1608023026100284,
+            "GLS": 0.3155157723019055,
+            "Huber": 0.15980849113590184,
+            "SCW-DC": 0.06650235828518195,
+            "S2-E": 0.06656699393599434,
+            "Baseline": 0.13937437966578364
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV",
+            "GLS"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.10606839828321063,
+            "SUnSAL": 0.10041682096677124,
+            "SUnSAL-TV": 0.11777773289648982,
+            "GLS": 0.27283738414624814,
+            "Huber": 0.10746227815970423,
+            "SCW-DC": 0.10459958218826153,
+            "S2-E": 0.10433255978892016,
+            "Baseline": 0.15748794548995504
+          },
+          "rank": [
+            "SUnSAL",
+            "S2-E",
+            "SCW-DC",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV",
+            "Baseline",
+            "GLS"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.05402567910052223,
+            "SUnSAL": 0.04914042616670082,
+            "SUnSAL-TV": 0.08624075274891993,
+            "GLS": 0.23426893313280056,
+            "Huber": 0.055760091842888534,
+            "SCW-DC": 0.15169456403358933,
+            "S2-E": 0.15129792004339046,
+            "Baseline": 0.18902737227445604
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV",
+            "S2-E",
+            "SCW-DC",
+            "Baseline",
+            "GLS"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.011777186295228422,
+            "SUnSAL": 0.017253528959950772,
+            "SUnSAL-TV": 0.08096295275095597,
+            "GLS": 0.20217637610798853,
+            "Huber": 0.014896096273768748,
+            "SCW-DC": 0.20157645708421595,
+            "S2-E": 0.20111811782303002,
+            "Baseline": 0.22849923652773702
+          },
+          "rank": [
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL",
+            "SUnSAL-TV",
+            "S2-E",
+            "SCW-DC",
+            "GLS",
+            "Baseline"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.032955485029036405,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.03249145072066969,
+          "dist_to_fx": 0.012945328108975846
+        },
+        "SUnSAL-TV": {
+          "tv": 0.01376558268344562,
+          "dist_to_fx": 0.08137743658267588
+        },
+        "GLS": {
+          "tv": 0.03431019281416086,
+          "dist_to_fx": 0.20166260130105504
+        },
+        "Huber": {
+          "tv": 0.03306727296657609,
+          "dist_to_fx": 0.009084510045411715
+        },
+        "SCW-DC": {
+          "tv": 0.05395994327664781,
+          "dist_to_fx": 0.20133137918363156
+        },
+        "S2-E": {
+          "tv": 0.05386546469622656,
+          "dist_to_fx": 0.20087208427322814
+        },
+        "Baseline": {
+          "tv": 0.06031130393335323,
+          "dist_to_fx": 0.22827865934611888
+        }
+      },
+      "ref_gap": 0.21074457012786432,
+      "clean_resid": 0.3239638718046926,
+      "reversals": 18,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SUnSAL-TV",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/Huber",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "SUnSAL-TV/Huber",
+        "SUnSAL-TV/SCW-DC",
+        "SUnSAL-TV/S2-E",
+        "SUnSAL-TV/Baseline",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline",
+        "SCW-DC/S2-E"
+      ]
+    },
+    "Samson|dead0.20|homo|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.18965285059772344,
+            "SUnSAL": 0.18439705772020296,
+            "SUnSAL-TV": 0.1955291732225367,
+            "GLS": 0.3301388897392396,
+            "Huber": 0.19075295839385117,
+            "SCW-DC": 0.06775221578286139,
+            "S2-E": 0.07113956924177964,
+            "Baseline": 0.12010748739867776
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV",
+            "GLS"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.1444127131755791,
+            "SUnSAL": 0.1393292164636542,
+            "SUnSAL-TV": 0.15653465645825895,
+            "GLS": 0.2909536182600224,
+            "Huber": 0.1455559779877957,
+            "SCW-DC": 0.07699915783523961,
+            "S2-E": 0.07958516213401748,
+            "Baseline": 0.12203752503278104
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV",
+            "GLS"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.10627096912587636,
+            "SUnSAL": 0.10185600322124011,
+            "SUnSAL-TV": 0.12777401505802985,
+            "GLS": 0.2566475960584675,
+            "Huber": 0.10741533170053291,
+            "SCW-DC": 0.11322118660812655,
+            "S2-E": 0.11471014330808682,
+            "Baseline": 0.14461039285873428
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV",
+            "Baseline",
+            "GLS"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.08534439207169697,
+            "SUnSAL": 0.08299590020566337,
+            "SUnSAL-TV": 0.11705109312820536,
+            "GLS": 0.2294202004477709,
+            "Huber": 0.08626252643877896,
+            "SCW-DC": 0.15893666384280866,
+            "S2-E": 0.1597957920301391,
+            "Baseline": 0.18022994522637453
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV",
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "GLS"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.09394397714775667,
+            "SUnSAL": 0.09462374287109206,
+            "SUnSAL-TV": 0.12894718708196207,
+            "GLS": 0.2120163374484485,
+            "Huber": 0.09431888811872817,
+            "SCW-DC": 0.20797679743116618,
+            "S2-E": 0.2084769350886023,
+            "Baseline": 0.2227221581243985
+          },
+          "rank": [
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL",
+            "SUnSAL-TV",
+            "SCW-DC",
+            "S2-E",
+            "GLS",
+            "Baseline"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.06833450414178431,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.06618622604193014,
+          "dist_to_fx": 0.011463603206959857
+        },
+        "SUnSAL-TV": {
+          "tv": 0.06056832800647403,
+          "dist_to_fx": 0.08870765818825896
+        },
+        "GLS": {
+          "tv": 0.09691118308951487,
+          "dist_to_fx": 0.1899786001746791
+        },
+        "Huber": {
+          "tv": 0.06889397197675957,
+          "dist_to_fx": 0.008308984107122637
+        },
+        "SCW-DC": {
+          "tv": 0.0434284658045898,
+          "dist_to_fx": 0.1856190983974169
+        },
+        "S2-E": {
+          "tv": 0.04373795914256807,
+          "dist_to_fx": 0.18618180064582324
+        },
+        "Baseline": {
+          "tv": 0.06074133202995451,
+          "dist_to_fx": 0.20200094385814046
+        }
+      },
+      "ref_gap": 0.21074457012786432,
+      "clean_resid": 0.3239638718046926,
+      "reversals": 15,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/Huber",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "SUnSAL-TV/SCW-DC",
+        "SUnSAL-TV/S2-E",
+        "SUnSAL-TV/Baseline",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline"
+      ]
+    },
+    "Samson|noisy20|hetero_strong|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.21108766218571165,
+            "SUnSAL": 0.20511413668858047,
+            "SUnSAL-TV": 0.20827777949260926,
+            "GLS": 0.359541102906047,
+            "Huber": 0.21227808152854755,
+            "SCW-DC": 0.06452017085532738,
+            "S2-E": 0.06515385336303721,
+            "Baseline": 0.1474372190902722
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "SUnSAL-TV",
+            "Exact-FCLS",
+            "Huber",
+            "GLS"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.15848896393450151,
+            "SUnSAL": 0.15262361465802632,
+            "SUnSAL-TV": 0.16076318995722155,
+            "GLS": 0.31430138361923377,
+            "Huber": 0.15974312745717884,
+            "SCW-DC": 0.07208532563987552,
+            "S2-E": 0.07218149311610389,
+            "Baseline": 0.14675170575945992
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV",
+            "GLS"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.1059771739727094,
+            "SUnSAL": 0.10033835551650497,
+            "SUnSAL-TV": 0.11773543312457059,
+            "GLS": 0.2717583005441473,
+            "Huber": 0.10735645669060524,
+            "SCW-DC": 0.10854213521892458,
+            "S2-E": 0.10829113771933761,
+            "Baseline": 0.1639696677042427
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "S2-E",
+            "SCW-DC",
+            "SUnSAL-TV",
+            "Baseline",
+            "GLS"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.05380734470651554,
+            "SUnSAL": 0.048920983750790056,
+            "SUnSAL-TV": 0.08619814619672776,
+            "GLS": 0.23339118944646356,
+            "Huber": 0.05553926578049802,
+            "SCW-DC": 0.15465495559494175,
+            "S2-E": 0.15425768147985572,
+            "Baseline": 0.1943905860315312
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL-TV",
+            "S2-E",
+            "SCW-DC",
+            "Baseline",
+            "GLS"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.01053368465443027,
+            "SUnSAL": 0.016443811650187472,
+            "SUnSAL-TV": 0.08093372484621897,
+            "GLS": 0.20159856121853825,
+            "Huber": 0.013981077232568445,
+            "SCW-DC": 0.20397689719545806,
+            "S2-E": 0.20350811583294776,
+            "Baseline": 0.2328969881205634
+          },
+          "rank": [
+            "Exact-FCLS",
+            "Huber",
+            "SUnSAL",
+            "SUnSAL-TV",
+            "GLS",
+            "S2-E",
+            "SCW-DC",
+            "Baseline"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.033105542097935876,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.032685645493937494,
+          "dist_to_fx": 0.012929307624352715
+        },
+        "SUnSAL-TV": {
+          "tv": 0.013774088245271187,
+          "dist_to_fx": 0.08130405341675646
+        },
+        "GLS": {
+          "tv": 0.03401175994253689,
+          "dist_to_fx": 0.20136229894021715
+        },
+        "Huber": {
+          "tv": 0.0332212570423701,
+          "dist_to_fx": 0.009097797623225136
+        },
+        "SCW-DC": {
+          "tv": 0.058555404984793405,
+          "dist_to_fx": 0.20421227566020772
+        },
+        "S2-E": {
+          "tv": 0.05841058264736217,
+          "dist_to_fx": 0.2037328278278338
+        },
+        "Baseline": {
+          "tv": 0.07266143462779273,
+          "dist_to_fx": 0.23247261419630472
+        }
+      },
+      "ref_gap": 0.21074457012786432,
+      "clean_resid": 0.3239638718046926,
+      "reversals": 20,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SUnSAL-TV",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/Huber",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "SUnSAL-TV/Huber",
+        "SUnSAL-TV/SCW-DC",
+        "SUnSAL-TV/S2-E",
+        "SUnSAL-TV/Baseline",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline",
+        "SCW-DC/S2-E"
+      ]
+    },
+    "JasperRidge|noisy20|homo|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.09107921292845697,
+            "SUnSAL": 0.08972899706419044,
+            "SUnSAL-TV": 0.14760359180353003,
+            "GLS": 0.09228290188855857,
+            "Huber": 0.09194252277478214,
+            "SCW-DC": 0.057731545242084646,
+            "S2-E": 0.0594286871686462,
+            "Baseline": 0.0606448829354119
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.0686496718286007,
+            "SUnSAL": 0.06733278882169776,
+            "SUnSAL-TV": 0.13840444425247755,
+            "GLS": 0.06995196546472432,
+            "Huber": 0.06956533388207051,
+            "SCW-DC": 0.0552374308173982,
+            "S2-E": 0.05680592953117779,
+            "Baseline": 0.05357661275603597
+          },
+          "rank": [
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.04642557433709321,
+            "SUnSAL": 0.045180948237508504,
+            "SUnSAL-TV": 0.132476270117245,
+            "GLS": 0.04791266073838755,
+            "Huber": 0.047438865477022946,
+            "SCW-DC": 0.06160047335434493,
+            "S2-E": 0.06282722744146751,
+            "Baseline": 0.05557253953708688
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.024961822329433763,
+            "SUnSAL": 0.023961089872882507,
+            "SUnSAL-TV": 0.13026640476592652,
+            "GLS": 0.02689183438905792,
+            "Huber": 0.026206074648696738,
+            "SCW-DC": 0.07458729773074449,
+            "S2-E": 0.07545070905687697,
+            "Baseline": 0.06581309123506346
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.01077280400719052,
+            "SUnSAL": 0.011495724549497793,
+            "SUnSAL-TV": 0.13196178367050904,
+            "GLS": 0.013263504996944318,
+            "Huber": 0.012176733956873681,
+            "SCW-DC": 0.09141725067785031,
+            "S2-E": 0.09199761170589632,
+            "Baseline": 0.08123805073393273
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.05818499296279949,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.05803316145664235,
+          "dist_to_fx": 0.00420379914590865
+        },
+        "SUnSAL-TV": {
+          "tv": 0.027933450759907077,
+          "dist_to_fx": 0.13193789901010625
+        },
+        "GLS": {
+          "tv": 0.05830066541257726,
+          "dist_to_fx": 0.007496844925740613
+        },
+        "Huber": {
+          "tv": 0.058219747877882706,
+          "dist_to_fx": 0.005549667160699075
+        },
+        "SCW-DC": {
+          "tv": 0.07054505869147042,
+          "dist_to_fx": 0.09059089482606587
+        },
+        "S2-E": {
+          "tv": 0.07074060395915112,
+          "dist_to_fx": 0.0911659149179722
+        },
+        "Baseline": {
+          "tv": 0.06223683200454094,
+          "dist_to_fx": 0.08060795682515044
+        }
+      },
+      "ref_gap": 0.09056277879829146,
+      "clean_resid": 0.05598859556090108,
+      "reversals": 15,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline",
+        "SCW-DC/Baseline",
+        "S2-E/Baseline"
+      ]
+    },
+    "JasperRidge|dead0.20|homo|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.08830319355988361,
+            "SUnSAL": 0.08719404978131559,
+            "SUnSAL-TV": 0.13997293754991985,
+            "GLS": 0.08952474684689836,
+            "Huber": 0.08919609274026027,
+            "SCW-DC": 0.04506326237774365,
+            "S2-E": 0.045508072273778157,
+            "Baseline": 0.060100797773978205
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.06992867011742247,
+            "SUnSAL": 0.06890019456807736,
+            "SUnSAL-TV": 0.13292357096901344,
+            "GLS": 0.07121201902032429,
+            "Huber": 0.07084081030968725,
+            "SCW-DC": 0.04288385450020404,
+            "S2-E": 0.04312336174703717,
+            "Baseline": 0.05449219837734762
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.054843285032759356,
+            "SUnSAL": 0.05400808646648853,
+            "SUnSAL-TV": 0.12949953771255218,
+            "GLS": 0.05615002319315343,
+            "Huber": 0.055732395854120174,
+            "SCW-DC": 0.05169675469693965,
+            "S2-E": 0.05170557149326892,
+            "Baseline": 0.057895557540535096
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.04637623349411347,
+            "SUnSAL": 0.04595336883349619,
+            "SUnSAL-TV": 0.1299876414413999,
+            "GLS": 0.047536308937013216,
+            "Huber": 0.047106067561095206,
+            "SCW-DC": 0.06731482768840225,
+            "S2-E": 0.06717521886565099,
+            "Baseline": 0.06898980789207539
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "S2-E",
+            "SCW-DC",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.0481552308260601,
+            "SUnSAL": 0.048288227483195376,
+            "SUnSAL-TV": 0.13434524795219385,
+            "GLS": 0.04890581082589341,
+            "Huber": 0.04854961747838914,
+            "SCW-DC": 0.08611166985225258,
+            "S2-E": 0.08588804348462475,
+            "Baseline": 0.08480857081427354
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "S2-E",
+            "SCW-DC",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.06302399887072703,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.06280054107605938,
+          "dist_to_fx": 0.0037139364051421817
+        },
+        "SUnSAL-TV": {
+          "tv": 0.05241320774577514,
+          "dist_to_fx": 0.12547963573529167
+        },
+        "GLS": {
+          "tv": 0.06328526297730996,
+          "dist_to_fx": 0.008502223343401415
+        },
+        "Huber": {
+          "tv": 0.06314519771423323,
+          "dist_to_fx": 0.006120265389423229
+        },
+        "SCW-DC": {
+          "tv": 0.06075992132744672,
+          "dist_to_fx": 0.07139376795471504
+        },
+        "S2-E": {
+          "tv": 0.06058818482447879,
+          "dist_to_fx": 0.07112756542694984
+        },
+        "Baseline": {
+          "tv": 0.060205154576764695,
+          "dist_to_fx": 0.06983940196452895
+        }
+      },
+      "ref_gap": 0.09056277879829146,
+      "clean_resid": 0.05598859556090108,
+      "reversals": 16,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline",
+        "SCW-DC/S2-E",
+        "SCW-DC/Baseline",
+        "S2-E/Baseline"
+      ]
+    },
+    "JasperRidge|noisy20|hetero_strong|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.09099569433345861,
+            "SUnSAL": 0.08966046357205472,
+            "SUnSAL-TV": 0.1475285091078495,
+            "GLS": 0.10037039510792704,
+            "Huber": 0.09235531803197032,
+            "SCW-DC": 0.05783272272766923,
+            "S2-E": 0.0594376892059713,
+            "Baseline": 0.05908026914351701
+          },
+          "rank": [
+            "SCW-DC",
+            "Baseline",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.06854659690327175,
+            "SUnSAL": 0.06724714312539348,
+            "SUnSAL-TV": 0.13830659766179584,
+            "GLS": 0.07845812074930622,
+            "Huber": 0.06995153488128626,
+            "SCW-DC": 0.05536538307415318,
+            "S2-E": 0.05683648611291763,
+            "Baseline": 0.05172948510225694
+          },
+          "rank": [
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.046284528761268554,
+            "SUnSAL": 0.045061734163891955,
+            "SUnSAL-TV": 0.13235547209627102,
+            "GLS": 0.057116891555200666,
+            "Huber": 0.04777166305727031,
+            "SCW-DC": 0.061735156716666774,
+            "S2-E": 0.06287396532813352,
+            "Baseline": 0.05372711758766567
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "Baseline",
+            "GLS",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.024720060060781018,
+            "SUnSAL": 0.023751707818812383,
+            "SUnSAL-TV": 0.13012466769215794,
+            "GLS": 0.03733904124997381,
+            "Huber": 0.026386520448702152,
+            "SCW-DC": 0.07471502939729022,
+            "S2-E": 0.07550554277419406,
+            "Baseline": 0.06420645458780558
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.010252182537397245,
+            "SUnSAL": 0.011087356468641974,
+            "SUnSAL-TV": 0.13180322212617201,
+            "GLS": 0.023479156954293902,
+            "Huber": 0.011643334663961526,
+            "SCW-DC": 0.0915349317713356,
+            "S2-E": 0.09205563826571209,
+            "Baseline": 0.07989703711519168
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.05821181902048709,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.0580713577005897,
+          "dist_to_fx": 0.00418907492952132
+        },
+        "SUnSAL-TV": {
+          "tv": 0.026912447290269523,
+          "dist_to_fx": 0.13182552396027467
+        },
+        "GLS": {
+          "tv": 0.05853769839418396,
+          "dist_to_fx": 0.02318960322463323
+        },
+        "Huber": {
+          "tv": 0.05822855551987229,
+          "dist_to_fx": 0.006087553820642911
+        },
+        "SCW-DC": {
+          "tv": 0.07059732848693064,
+          "dist_to_fx": 0.09017738900089894
+        },
+        "S2-E": {
+          "tv": 0.07077308460602798,
+          "dist_to_fx": 0.09069673248482925
+        },
+        "Baseline": {
+          "tv": 0.06121583998905383,
+          "dist_to_fx": 0.07895679585824858
+        }
+      },
+      "ref_gap": 0.09056277879829146,
+      "clean_resid": 0.05598859556090108,
+      "reversals": 14,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "Exact-FCLS/Baseline",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "SUnSAL/Baseline",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E",
+        "Huber/Baseline",
+        "SCW-DC/Baseline"
+      ]
+    },
+    "Houston|noisy20|homo|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.0777487003470527,
+            "SUnSAL": 0.07404512651461273,
+            "SUnSAL-TV": 0.1236609428694448,
+            "GLS": 0.0970566178291282,
+            "Huber": 0.08048644003424711,
+            "SCW-DC": 0.03229407332747783,
+            "S2-E": 0.033700341485641515,
+            "Baseline": 0.08864869388000628
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "Baseline",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.05871309633657536,
+            "SUnSAL": 0.055068415317349524,
+            "SUnSAL-TV": 0.11831208593235616,
+            "GLS": 0.08129612814160633,
+            "Huber": 0.06181105685307232,
+            "SCW-DC": 0.038876647349298264,
+            "S2-E": 0.04022508838212682,
+            "Baseline": 0.08992287360062254
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.03990985234684602,
+            "SUnSAL": 0.0364085337499414,
+            "SUnSAL-TV": 0.11595978569452033,
+            "GLS": 0.06738942941631754,
+            "Huber": 0.043661743279266335,
+            "SCW-DC": 0.05218315460661727,
+            "S2-E": 0.05332545201852936,
+            "Baseline": 0.09516751990515145
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SCW-DC",
+            "S2-E",
+            "GLS",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.0219446195067284,
+            "SUnSAL": 0.01902192608823068,
+            "SUnSAL-TV": 0.11678525376519885,
+            "GLS": 0.05671694033819324,
+            "Huber": 0.027116236484887448,
+            "SCW-DC": 0.06839569371169142,
+            "S2-E": 0.0693711129263471,
+            "Baseline": 0.10378242563763007
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.010655407745733775,
+            "SUnSAL": 0.011886437330154856,
+            "SUnSAL-TV": 0.12072332195360228,
+            "GLS": 0.05133701221675381,
+            "Huber": 0.01753379918879938,
+            "SCW-DC": 0.08588400075892771,
+            "S2-E": 0.08674272395240797,
+            "Baseline": 0.1150127309110187
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.10182304276370233,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.10172165105884476,
+          "dist_to_fx": 0.005133175888854357
+        },
+        "SUnSAL-TV": {
+          "tv": 0.017635647413702184,
+          "dist_to_fx": 0.12103623413448894
+        },
+        "GLS": {
+          "tv": 0.11223485971085162,
+          "dist_to_fx": 0.0503036626774325
+        },
+        "Huber": {
+          "tv": 0.10507879718909198,
+          "dist_to_fx": 0.013885100407674135
+        },
+        "SCW-DC": {
+          "tv": 0.10072087277631699,
+          "dist_to_fx": 0.08537377889813647
+        },
+        "S2-E": {
+          "tv": 0.10069606730395719,
+          "dist_to_fx": 0.0862434849889885
+        },
+        "Baseline": {
+          "tv": 0.11760527537059624,
+          "dist_to_fx": 0.11475079149312765
+        }
+      },
+      "ref_gap": 0.07710778835585824,
+      "clean_resid": 0.09230498811384454,
+      "reversals": 10,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E"
+      ]
+    },
+    "Houston|dead0.20|homo|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.08451376268705821,
+            "SUnSAL": 0.0817818929596213,
+            "SUnSAL-TV": 0.14507373115071426,
+            "GLS": 0.09987932524591607,
+            "Huber": 0.08663821962285954,
+            "SCW-DC": 0.055797832839768594,
+            "S2-E": 0.05646834880151416,
+            "Baseline": 0.09268611871268789
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "Baseline",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.0709642526431385,
+            "SUnSAL": 0.06856075370573547,
+            "SUnSAL-TV": 0.140265136047729,
+            "GLS": 0.0877489177926065,
+            "Huber": 0.0731368864223577,
+            "SCW-DC": 0.05899739378450226,
+            "S2-E": 0.05972589982245308,
+            "Baseline": 0.0935609754445524
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.060600953622730276,
+            "SUnSAL": 0.05878841076399803,
+            "SUnSAL-TV": 0.1380051833777954,
+            "GLS": 0.07853067486981037,
+            "Huber": 0.06272980606270555,
+            "SCW-DC": 0.06775830703004927,
+            "S2-E": 0.06847549326067764,
+            "Baseline": 0.0982842664138219
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SCW-DC",
+            "S2-E",
+            "GLS",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.05524696720000459,
+            "SUnSAL": 0.05435787808260696,
+            "SUnSAL-TV": 0.1384187641391835,
+            "GLS": 0.07333118433020895,
+            "Huber": 0.05713365347850082,
+            "SCW-DC": 0.08028004264960366,
+            "S2-E": 0.08095557190838366,
+            "Baseline": 0.10634443709427903
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.05634874059140217,
+            "SUnSAL": 0.05653920724399168,
+            "SUnSAL-TV": 0.14148243445140776,
+            "GLS": 0.07301410597596686,
+            "Huber": 0.05776401585372448,
+            "SCW-DC": 0.09508829422089486,
+            "S2-E": 0.0957179055477769,
+            "Baseline": 0.117054188095775
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.10131081575454289,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.10094660876957946,
+          "dist_to_fx": 0.004598340116752248
+        },
+        "SUnSAL-TV": {
+          "tv": 0.04818736950376238,
+          "dist_to_fx": 0.1299399289942135
+        },
+        "GLS": {
+          "tv": 0.11342123607061629,
+          "dist_to_fx": 0.046459891092170524
+        },
+        "Huber": {
+          "tv": 0.10461083683378723,
+          "dist_to_fx": 0.0126814178127472
+        },
+        "SCW-DC": {
+          "tv": 0.09735121551208516,
+          "dist_to_fx": 0.07662629685888546
+        },
+        "S2-E": {
+          "tv": 0.09743123843471158,
+          "dist_to_fx": 0.07740777594601854
+        },
+        "Baseline": {
+          "tv": 0.11919604410851986,
+          "dist_to_fx": 0.10264992510999589
+        }
+      },
+      "ref_gap": 0.07710778835585824,
+      "clean_resid": 0.09230498811384454,
+      "reversals": 10,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E"
+      ]
+    },
+    "Houston|noisy20|hetero_strong|123": {
+      "rec": {
+        "lam|0.00": {
+          "rmse": {
+            "Exact-FCLS": 0.077780062968337,
+            "SUnSAL": 0.07407580996649396,
+            "SUnSAL-TV": 0.1236609470624562,
+            "GLS": 0.09785758558572863,
+            "Huber": 0.08052297136844486,
+            "SCW-DC": 0.03239253802117433,
+            "S2-E": 0.03379680304240399,
+            "Baseline": 0.08864974875633037
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "Baseline",
+            "GLS",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.25": {
+          "rmse": {
+            "Exact-FCLS": 0.058749761933572564,
+            "SUnSAL": 0.05510498349823022,
+            "SUnSAL-TV": 0.11831280747562667,
+            "GLS": 0.0822018542443803,
+            "Huber": 0.061853046485949144,
+            "SCW-DC": 0.03894580461970577,
+            "S2-E": 0.04029318393538047,
+            "Baseline": 0.08992136792912687
+          },
+          "rank": [
+            "SCW-DC",
+            "S2-E",
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.50": {
+          "rmse": {
+            "Exact-FCLS": 0.039956629190563954,
+            "SUnSAL": 0.03645674354255566,
+            "SUnSAL-TV": 0.11596125357849132,
+            "GLS": 0.0684206400569233,
+            "Huber": 0.04371328354347347,
+            "SCW-DC": 0.05222524537083802,
+            "S2-E": 0.05336720740260725,
+            "Baseline": 0.09516369183820733
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "SCW-DC",
+            "S2-E",
+            "GLS",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|0.75": {
+          "rmse": {
+            "Exact-FCLS": 0.02201661380235311,
+            "SUnSAL": 0.01910053588630659,
+            "SUnSAL-TV": 0.11678743780156575,
+            "GLS": 0.057869028922323644,
+            "Huber": 0.027186473378137756,
+            "SCW-DC": 0.06842059769280842,
+            "S2-E": 0.06939580937120306,
+            "Baseline": 0.10377670960450679
+          },
+          "rank": [
+            "SUnSAL",
+            "Exact-FCLS",
+            "Huber",
+            "GLS",
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        },
+        "lam|1.00": {
+          "rmse": {
+            "Exact-FCLS": 0.010776443214738068,
+            "SUnSAL": 0.011990336549750713,
+            "SUnSAL-TV": 0.12072613757114023,
+            "GLS": 0.05253062353313436,
+            "Huber": 0.017622681104217715,
+            "SCW-DC": 0.08589808785828267,
+            "S2-E": 0.08675655171236712,
+            "Baseline": 0.11500558265780435
+          },
+          "rank": [
+            "Exact-FCLS",
+            "SUnSAL",
+            "Huber",
+            "GLS",
+            "SCW-DC",
+            "S2-E",
+            "Baseline",
+            "SUnSAL-TV"
+          ]
+        }
+      },
+      "mechanism": {
+        "Exact-FCLS": {
+          "tv": 0.10185585222932945,
+          "dist_to_fx": 0.0
+        },
+        "SUnSAL": {
+          "tv": 0.1017530994238955,
+          "dist_to_fx": 0.005136498020859579
+        },
+        "SUnSAL-TV": {
+          "tv": 0.01763315026533408,
+          "dist_to_fx": 0.12104146267925499
+        },
+        "GLS": {
+          "tv": 0.11190955078701285,
+          "dist_to_fx": 0.05178627488059182
+        },
+        "Huber": {
+          "tv": 0.10513818073254956,
+          "dist_to_fx": 0.013849318559406692
+        },
+        "SCW-DC": {
+          "tv": 0.10077921271667133,
+          "dist_to_fx": 0.0853787748371337
+        },
+        "S2-E": {
+          "tv": 0.10075614986100463,
+          "dist_to_fx": 0.08624781200502396
+        },
+        "Baseline": {
+          "tv": 0.11764861489245641,
+          "dist_to_fx": 0.11474414341336504
+        }
+      },
+      "ref_gap": 0.07710778835585824,
+      "clean_resid": 0.09230498811384454,
+      "reversals": 10,
+      "flip_pairs": [
+        "Exact-FCLS/SUnSAL",
+        "Exact-FCLS/SCW-DC",
+        "Exact-FCLS/S2-E",
+        "SUnSAL/SCW-DC",
+        "SUnSAL/S2-E",
+        "GLS/SCW-DC",
+        "GLS/S2-E",
+        "GLS/Baseline",
+        "Huber/SCW-DC",
+        "Huber/S2-E"
+      ]
+    }
+  },
+  "arm_b": {
+    "Urban": {
+      "nu=0.00": {
+        "fixed_residual": 1.1316373589643028e-17,
+        "fixed_rmse": 4.068384631888426e-15,
+        "elmm_residual": 5.5761950696333336e-11,
+        "elmm_rmse": 7.681943346562066e-10,
+        "plmm_residual": 4.3276509685888764e-16,
+        "plmm_rmse": 5.712749836441792e-15
+      },
+      "nu=0.02": {
+        "fixed_residual": 0.0019927518846124775,
+        "fixed_rmse": 0.01440835179816757,
+        "elmm_residual": 0.0011280282836126337,
+        "elmm_rmse": 0.014009898441666366,
+        "plmm_residual": 0.0008937046402542623,
+        "plmm_rmse": 0.012137869606891715
+      },
+      "nu=0.05": {
+        "fixed_residual": 0.004981879711531193,
+        "fixed_rmse": 0.03451952688434151,
+        "elmm_residual": 0.0028622752739479104,
+        "elmm_rmse": 0.033704636663227316,
+        "plmm_residual": 0.0022452160930803346,
+        "plmm_rmse": 0.029152156593887434
+      }
+    },
+    "Samson": {
+      "nu=0.00": {
+        "fixed_residual": 2.9153764871371733e-17,
+        "fixed_rmse": 3.820462198253319e-15,
+        "elmm_residual": 2.616576284707493e-11,
+        "elmm_rmse": 1.9525766430534114e-10,
+        "plmm_residual": 2.0707500544159696e-16,
+        "plmm_rmse": 9.311441551086605e-16
+      },
+      "nu=0.02": {
+        "fixed_residual": 0.006846589841759991,
+        "fixed_rmse": 0.009046114218333585,
+        "elmm_residual": 0.003988658341184867,
+        "elmm_rmse": 0.009147863148727084,
+        "plmm_residual": 0.0022997511649193677,
+        "plmm_rmse": 0.009496862057871742
+      },
+      "nu=0.05": {
+        "fixed_residual": 0.01711647460439998,
+        "fixed_rmse": 0.02158498648094853,
+        "elmm_residual": 0.010070274706172624,
+        "elmm_rmse": 0.021701441008407388,
+        "plmm_residual": 0.005873599977967652,
+        "plmm_rmse": 0.022974440024413515
+      }
+    },
+    "JasperRidge": {
+      "nu=0.00": {
+        "fixed_residual": 1.8412420046297764e-17,
+        "fixed_rmse": 8.916941969292128e-15,
+        "elmm_residual": 2.8115932900998588e-11,
+        "elmm_rmse": 2.34460058614106e-10,
+        "plmm_residual": 5.329951525454652e-15,
+        "plmm_rmse": 1.9911062030298354e-14
+      },
+      "nu=0.02": {
+        "fixed_residual": 0.0036236002141824815,
+        "fixed_rmse": 0.012143915493268582,
+        "elmm_residual": 0.0022028199643670614,
+        "elmm_rmse": 0.01296224889337747,
+        "plmm_residual": 0.0008958043359310441,
+        "plmm_rmse": 0.008524166619149483
+      },
+      "nu=0.05": {
+        "fixed_residual": 0.009059000535456208,
+        "fixed_rmse": 0.0290364839654128,
+        "elmm_residual": 0.0055954250774378255,
+        "elmm_rmse": 0.03088246108285796,
+        "plmm_residual": 0.002251585943398409,
+        "plmm_rmse": 0.02036180078278182
+      }
+    }
+  },
+  "arm_c": {
+    "rec": {
+      "lam|0.00": {
+        "rmse": {
+          "Exact-FCLS": 0.10498573396701978,
+          "SUnSAL": 0.09137155501311633,
+          "SUnSAL-TV": 0.18969880367134997,
+          "GLS": 0.11852904125633403,
+          "Huber": 0.12145050487455991,
+          "SCW-DC": 0.1456412137925045,
+          "S2-E": 0.17239085508230984,
+          "Baseline": 0.09315786508449897
+        },
+        "rank": [
+          "SUnSAL",
+          "Baseline",
+          "Exact-FCLS",
+          "GLS",
+          "Huber",
+          "SCW-DC",
+          "S2-E",
+          "SUnSAL-TV"
+        ]
+      },
+      "lam|0.25": {
+        "rmse": {
+          "Exact-FCLS": 0.0825339427745949,
+          "SUnSAL": 0.07079011296143295,
+          "SUnSAL-TV": 0.1885384836126827,
+          "GLS": 0.09730531959565882,
+          "Huber": 0.10150576555979232,
+          "SCW-DC": 0.14555087620128257,
+          "S2-E": 0.1715491170690255,
+          "Baseline": 0.10169615473134205
+        },
+        "rank": [
+          "SUnSAL",
+          "Exact-FCLS",
+          "GLS",
+          "Huber",
+          "Baseline",
+          "SCW-DC",
+          "S2-E",
+          "SUnSAL-TV"
+        ]
+      },
+      "lam|0.50": {
+        "rmse": {
+          "Exact-FCLS": 0.061804109290688365,
+          "SUnSAL": 0.05377516122290486,
+          "SUnSAL-TV": 0.19059363135108143,
+          "GLS": 0.07813811914205795,
+          "Huber": 0.08411102538575146,
+          "SCW-DC": 0.14958877238501897,
+          "S2-E": 0.17423444283801567,
+          "Baseline": 0.11499511641659181
+        },
+        "rank": [
+          "SUnSAL",
+          "Exact-FCLS",
+          "GLS",
+          "Huber",
+          "Baseline",
+          "SCW-DC",
+          "S2-E",
+          "SUnSAL-TV"
+        ]
+      },
+      "lam|0.75": {
+        "rmse": {
+          "Exact-FCLS": 0.04522933773974564,
+          "SUnSAL": 0.044613279277270865,
+          "SUnSAL-TV": 0.19576300383902834,
+          "GLS": 0.0629353235978728,
+          "Huber": 0.07116148953521784,
+          "SCW-DC": 0.15743758425553386,
+          "S2-E": 0.18028929925775036,
+          "Baseline": 0.13161950677637158
+        },
+        "rank": [
+          "SUnSAL",
+          "Exact-FCLS",
+          "GLS",
+          "Huber",
+          "Baseline",
+          "SCW-DC",
+          "S2-E",
+          "SUnSAL-TV"
+        ]
+      },
+      "lam|1.00": {
+        "rmse": {
+          "Exact-FCLS": 0.038596462411455396,
+          "SUnSAL": 0.048030930235113505,
+          "SUnSAL-TV": 0.20380977368014275,
+          "GLS": 0.05508351024280032,
+          "Huber": 0.06535517917840629,
+          "SCW-DC": 0.1685658146851256,
+          "S2-E": 0.1893907880900079,
+          "Baseline": 0.15047113065763715
+        },
+        "rank": [
+          "Exact-FCLS",
+          "SUnSAL",
+          "GLS",
+          "Huber",
+          "Baseline",
+          "SCW-DC",
+          "S2-E",
+          "SUnSAL-TV"
+        ]
+      }
+    },
+    "reversals": 4,
+    "flip_pairs": [
+      "Exact-FCLS/SUnSAL",
+      "Exact-FCLS/Baseline",
+      "GLS/Baseline",
+      "Huber/Baseline"
+    ],
+    "mechanism": {
+      "Exact-FCLS": {
+        "tv": 0.13822719535445124,
+        "dist_to_fx": 0.0
+      },
+      "SUnSAL": {
+        "tv": 0.1358056849045569,
+        "dist_to_fx": 0.029845526922998473
+      },
+      "SUnSAL-TV": {
+        "tv": 0.0016532109875568829,
+        "dist_to_fx": 0.2055404776860806
+      },
+      "GLS": {
+        "tv": 0.13668975910575845,
+        "dist_to_fx": 0.038635473544740645
+      },
+      "Huber": {
+        "tv": 0.12915162094669552,
+        "dist_to_fx": 0.05272350136585573
+      },
+      "SCW-DC": {
+        "tv": 0.1219363590689648,
+        "dist_to_fx": 0.16903819745273893
+      },
+      "S2-E": {
+        "tv": 0.12272307942423415,
+        "dist_to_fx": 0.19039157280141372
+      },
+      "Baseline": {
+        "tv": 0.12585439325444736,
+        "dist_to_fx": 0.1495567910039805
+      }
+    },
+    "ref_gap": 0.0987136810413572,
+    "clean_resid": 0.2194788452050959,
+    "endmembers": [
+      0,
+      2,
+      8,
+      10
+    ],
+    "bands": 188,
+    "pixels": 10000,
+    "model_consistency_gain": 73.49894208761272
+  },
+  "stats": {
+    "mean_reversals": 17,
+    "flip_pairs": [
+      "Exact-FCLS/Baseline",
+      "Exact-FCLS/GLS",
+      "Exact-FCLS/S2-E",
+      "Exact-FCLS/SCW-DC",
+      "Exact-FCLS/SUnSAL",
+      "Exact-FCLS/SUnSAL-TV",
+      "GLS/Baseline",
+      "GLS/Huber",
+      "GLS/S2-E",
+      "GLS/SCW-DC",
+      "Huber/Baseline",
+      "Huber/S2-E",
+      "Huber/SCW-DC",
+      "S2-E/Baseline",
+      "SCW-DC/Baseline",
+      "SCW-DC/S2-E",
+      "SUnSAL-TV/Baseline",
+      "SUnSAL-TV/Huber",
+      "SUnSAL-TV/S2-E",
+      "SUnSAL-TV/SCW-DC",
+      "SUnSAL/Baseline",
+      "SUnSAL/GLS",
+      "SUnSAL/Huber",
+      "SUnSAL/S2-E",
+      "SUnSAL/SCW-DC"
+    ],
+    "curve": {
+      "0.00": {
+        "Exact-FCLS": 0.17815237679595844,
+        "SUnSAL": 0.17452726052832124,
+        "SUnSAL-TV": 0.21000470471003213,
+        "GLS": 0.22295895507503205,
+        "Huber": 0.1790949125676007,
+        "SCW-DC": 0.05990896130580365,
+        "S2-E": 0.0609942206187792,
+        "Baseline": 0.09241882634258586
+      },
+      "0.25": {
+        "Exact-FCLS": 0.1355235339376402,
+        "SUnSAL": 0.13199471364148221,
+        "SUnSAL-TV": 0.18531982042612005,
+        "GLS": 0.18528464224922353,
+        "Huber": 0.1365595743649266,
+        "SCW-DC": 0.06880451266352688,
+        "S2-E": 0.0695302086984562,
+        "Baseline": 0.09360610178545414
+      },
+      "0.50": {
+        "Exact-FCLS": 0.09504324616419287,
+        "SUnSAL": 0.09176179329952977,
+        "SUnSAL-TV": 0.1682260497065958,
+        "GLS": 0.1522238282500422,
+        "Huber": 0.09623588137525976,
+        "SCW-DC": 0.09930208110464762,
+        "S2-E": 0.09968254108684821,
+        "Baseline": 0.11432604064533779
+      },
+      "0.75": {
+        "Exact-FCLS": 0.059409644737226236,
+        "SUnSAL": 0.05684278917125571,
+        "SUnSAL-TV": 0.1616827648743816,
+        "GLS": 0.1280867696517442,
+        "Huber": 0.06095724435366669,
+        "SCW-DC": 0.13751394181396076,
+        "S2-E": 0.1376774591721085,
+        "Baseline": 0.14579877042230946
+      },
+      "1.00": {
+        "Exact-FCLS": 0.03725316015265473,
+        "SUnSAL": 0.039514868045917376,
+        "SUnSAL-TV": 0.16920726090541952,
+        "GLS": 0.11898459788926385,
+        "Huber": 0.0404524702885397,
+        "SCW-DC": 0.1788482586323381,
+        "S2-E": 0.1788751265280752,
+        "Baseline": 0.18287100291739644
+      }
+    },
+    "rank0": [
+      "SCW-DC",
+      "S2-E",
+      "Baseline",
+      "SUnSAL",
+      "Exact-FCLS",
+      "Huber",
+      "SUnSAL-TV",
+      "GLS"
+    ],
+    "rank1": [
+      "Exact-FCLS",
+      "SUnSAL",
+      "Huber",
+      "GLS",
+      "SUnSAL-TV",
+      "SCW-DC",
+      "S2-E",
+      "Baseline"
+    ],
+    "b_fixed": 0.028380332443567618,
+    "b_elmm": 0.028762846251497554,
+    "b_plmm": 0.02416279913369426,
+    "b_fixed_nu0": 5.601929599811291e-15,
+    "tv_sunsal_tv": 0.03696625707363775,
+    "tv_sunsal": 0.1037753140852749,
+    "tv_fcls": 0.10429629206530638,
+    "cuprite_reversals": 4,
+    "cuprite_ref_gap": 0.0987136810413572,
+    "cuprite_rank0": [
+      "SUnSAL",
+      "Baseline",
+      "Exact-FCLS",
+      "GLS",
+      "Huber",
+      "SCW-DC",
+      "S2-E",
+      "SUnSAL-TV"
+    ],
+    "cuprite_rank1": [
+      "Exact-FCLS",
+      "SUnSAL",
+      "GLS",
+      "Huber",
+      "Baseline",
+      "SCW-DC",
+      "S2-E",
+      "SUnSAL-TV"
+    ]
+  }
+}

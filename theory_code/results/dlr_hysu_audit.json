@@ -1,0 +1,175 @@
+{
+  "source": "DLR HySU, Cerra et al. 2021",
+  "archive_sha256": "2089ef22464e0fa7d6781245b7c431b4495ca2cc75d588403bc08a9fe5ebb086",
+  "cube_shape": [
+    86,
+    123,
+    135
+  ],
+  "labeled_pixels": 236,
+  "overlapping_roi_pixels": 60,
+  "roi_order": [
+    "Bitumen",
+    "Red metal",
+    "Blue fabric",
+    "Red fabric",
+    "Green fabric"
+  ],
+  "roi_reference": "target presence regions, not fractional abundances",
+  "libraries": {
+    "field": {
+      "fallback_count": 0,
+      "kkt": {
+        "primal_sum_max": 5.551115123125783e-16,
+        "primal_negative_max": 0.0,
+        "stationarity_active_max": 1.3239275127585604e-12,
+        "dual_negative_max": 0.0,
+        "complementarity_max": 1.1059837996679626e-12
+      },
+      "slsqp": {
+        "sampled": 40,
+        "success": 40,
+        "failures": [],
+        "max_absolute_objective_gap": 4.135147085859714e-13,
+        "max_abundance_difference": 5.50599868268109e-06
+      },
+      "AUC": {
+        "Heuristic": {
+          "Bitumen": {
+            "auc": 0.9048228766538625,
+            "positive_count": 71,
+            "negative_count": 165
+          },
+          "Red metal": {
+            "auc": 0.8816568047337278,
+            "positive_count": 67,
+            "negative_count": 169
+          },
+          "Blue fabric": {
+            "auc": 0.9549414519906323,
+            "positive_count": 61,
+            "negative_count": 175
+          },
+          "Red fabric": {
+            "auc": 0.9819277108433735,
+            "positive_count": 70,
+            "negative_count": 166
+          },
+          "Green fabric": {
+            "auc": 0.958494623655914,
+            "positive_count": 50,
+            "negative_count": 186
+          }
+        },
+        "FCLS": {
+          "Bitumen": {
+            "auc": 0.8732394366197183,
+            "positive_count": 71,
+            "negative_count": 165
+          },
+          "Red metal": {
+            "auc": 0.8906208601960611,
+            "positive_count": 67,
+            "negative_count": 169
+          },
+          "Blue fabric": {
+            "auc": 0.9355503512880562,
+            "positive_count": 61,
+            "negative_count": 175
+          },
+          "Red fabric": {
+            "auc": 0.9407487091222031,
+            "positive_count": 70,
+            "negative_count": 166
+          },
+          "Green fabric": {
+            "auc": 0.9924731182795699,
+            "positive_count": 50,
+            "negative_count": 186
+          }
+        }
+      },
+      "reconstruction_rmse": {
+        "Heuristic": 0.04216412818747516,
+        "FCLS": 0.017867467085903012
+      }
+    },
+    "image": {
+      "fallback_count": 0,
+      "kkt": {
+        "primal_sum_max": 5.551115123125783e-16,
+        "primal_negative_max": 0.0,
+        "stationarity_active_max": 6.072928618316986e-13,
+        "dual_negative_max": 7.319950201534198e-16,
+        "complementarity_max": 2.7662104527152455e-13
+      },
+      "slsqp": {
+        "sampled": 40,
+        "success": 40,
+        "failures": [],
+        "max_absolute_objective_gap": 3.439527308801704e-13,
+        "max_abundance_difference": 1.0940947257065403e-06
+      },
+      "AUC": {
+        "Heuristic": {
+          "Bitumen": {
+            "auc": 0.8421681604780197,
+            "positive_count": 71,
+            "negative_count": 165
+          },
+          "Red metal": {
+            "auc": 0.8961847566899231,
+            "positive_count": 67,
+            "negative_count": 169
+          },
+          "Blue fabric": {
+            "auc": 0.9397658079625293,
+            "positive_count": 61,
+            "negative_count": 175
+          },
+          "Red fabric": {
+            "auc": 0.9368330464716007,
+            "positive_count": 70,
+            "negative_count": 166
+          },
+          "Green fabric": {
+            "auc": 0.9511827956989247,
+            "positive_count": 50,
+            "negative_count": 186
+          }
+        },
+        "FCLS": {
+          "Bitumen": {
+            "auc": 0.8773367477592829,
+            "positive_count": 71,
+            "negative_count": 165
+          },
+          "Red metal": {
+            "auc": 0.9127881303541464,
+            "positive_count": 67,
+            "negative_count": 169
+          },
+          "Blue fabric": {
+            "auc": 0.9240749414519907,
+            "positive_count": 61,
+            "negative_count": 175
+          },
+          "Red fabric": {
+            "auc": 0.9355421686746987,
+            "positive_count": 70,
+            "negative_count": 166
+          },
+          "Green fabric": {
+            "auc": 0.9869892473118279,
+            "positive_count": 50,
+            "negative_count": 186
+          }
+        }
+      },
+      "reconstruction_rmse": {
+        "Heuristic": 0.03979806701992446,
+        "FCLS": 0.022672345685910353
+      }
+    }
+  }
+}

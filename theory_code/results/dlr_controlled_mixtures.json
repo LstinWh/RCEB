@@ -1,0 +1,154 @@
+{
+  "archive_sha256": "2089ef22464e0fa7d6781245b7c431b4495ca2cc75d588403bc08a9fe5ebb086",
+  "shape": [
+    64,
+    64
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "snr_db": 30,
+  "description": "Synthetic truth; fit field library to mixtures generated from field or image library.",
+  "runs": [
+    {
+      "seed": 11,
+      "generator": "field",
+      "sigma": 0.008132912403380814,
+      "fallback_count": 0,
+      "kkt": {
+        "primal_sum_max": 4.440892098500626e-16,
+        "primal_negative_max": 0.0,
+        "stationarity_active_max": 1.993741977068808e-12,
+        "dual_negative_max": 0.0,
+        "complementarity_max": 1.3337022956433065e-12
+      },
+      "methods": {
+        "heuristic": {
+          "abundance_rmse": 0.04331440555769446,
+          "reconstruction_rmse": 0.011590600694095291
+        },
+        "fcls": {
+          "abundance_rmse": 0.03583510799043257,
+          "reconstruction_rmse": 0.007977411646532399
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "generator": "image",
+      "sigma": 0.007439490959876629,
+      "fallback_count": 0,
+      "kkt": {
+        "primal_sum_max": 3.3306690738754696e-16,
+        "primal_negative_max": 0.0,
+        "stationarity_active_max": 1.4174565384286741e-12,
+        "dual_negative_max": 0.0,
+        "complementarity_max": 8.42156631481796e-13
+      },
+      "methods": {
+        "heuristic": {
+          "abundance_rmse": 0.06971960854963893,
+          "reconstruction_rmse": 0.013545058906739902
+        },
+        "fcls": {
+          "abundance_rmse": 0.06893448572262609,
+          "reconstruction_rmse": 0.008346048798401711
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "generator": "field",
+      "sigma": 0.0075426721907470955,
+      "fallback_count": 0,
+      "kkt": {
+        "primal_sum_max": 4.440892098500626e-16,
+        "primal_negative_max": 0.0,
+        "stationarity_active_max": 2.141080715500898e-12,
+        "dual_negative_max": 0.0,
+        "complementarity_max": 1.389090703199844e-12
+      },
+      "methods": {
+        "heuristic": {
+          "abundance_rmse": 0.04078770240313462,
+          "reconstruction_rmse": 0.010234762373092522
+        },
+        "fcls": {
+          "abundance_rmse": 0.03419564115069182,
+          "reconstruction_rmse": 0.00740908247786792
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "generator": "image",
+      "sigma": 0.006939090551892361,
+      "fallback_count": 0,
+      "kkt": {
+        "primal_sum_max": 3.3306690738754696e-16,
+        "primal_negative_max": 0.0,
+        "stationarity_active_max": 1.144474733082504e-12,
+        "dual_negative_max": 0.0,
+        "complementarity_max": 5.655437275521654e-13
+      },
+      "methods": {
+        "heuristic": {
+          "abundance_rmse": 0.0677712477206708,
+          "reconstruction_rmse": 0.011466630539897223
+        },
+        "fcls": {
+          "abundance_rmse": 0.07217203973341162,
+          "reconstruction_rmse": 0.007809271431073853
+        }
+      }
+    },
+    {
+      "seed": 47,
+      "generator": "field",
+      "sigma": 0.008222507954884382,
+      "fallback_count": 0,
+      "kkt": {
+        "primal_sum_max": 4.440892098500626e-16,
+        "primal_negative_max": 0.0,
+        "stationarity_active_max": 1.601488256244843e-12,
+        "dual_negative_max": 0.0,
+        "complementarity_max": 1.0591019501371752e-12
+      },
+      "methods": {
+        "heuristic": {
+          "abundance_rmse": 0.04461915650842877,
+          "reconstruction_rmse": 0.011768035105156852
+        },
+        "fcls": {
+          "abundance_rmse": 0.03696419324503017,
+          "reconstruction_rmse": 0.008080206992258941
+        }
+      }
+    },
+    {
+      "seed": 47,
+      "generator": "image",
+      "sigma": 0.007501626312500178,
+      "fallback_count": 0,
+      "kkt": {
+        "primal_sum_max": 3.3306690738754696e-16,
+        "primal_negative_max": 0.0,
+        "stationarity_active_max": 1.453354797620321e-12,
+        "dual_negative_max": 0.0,
+        "complementarity_max": 7.70344125863388e-13
+      },
+      "methods": {
+        "heuristic": {
+          "abundance_rmse": 0.07364371518559631,
+          "reconstruction_rmse": 0.013757937947204828
+        },
+        "fcls": {
+          "abundance_rmse": 0.0743142685232242,
+          "reconstruction_rmse": 0.008419561686258408
+        }
+      }
+    }
+  ]
+}
